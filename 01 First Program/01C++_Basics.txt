@@ -1,0 +1,32 @@
+Write first code in C++
+
+#include <iostream> //header file for input and output
+using namespace std; //this helps to not to write std in -> std::cout makes it short -> cout 
+int main()         //start
+{
+     std::cout<<"hello everyone";
+     cout<<2+3; //by using namespace std 
+     //without quotation operation will be performed but with quotation it will print same as it is
+};                 //end
+at end semicolon is optional
+
+cout - console output (display in screen)
+
+why header file is not included in the backend of compiler?
+because it gets new updates and bugs or to add new header file so that is is not included in the compiler backend 
+Header files are not part of the compiler's backend because they are handled in the preprocessing phase (frontend) to provide flexibility and modularity. This allows easy updates or additions to header files without changing the compiler's core. The backend focuses on optimizing and generating machine code, not handling declarations from header files.
+
+<<endl (end of line) after quotation and \n - for new line
+\n is faster than endl
+<< - insertion operator
+cout<<"Hello everyone"<<endl<<"Hello everyone\n"; // in one line two statement
+
+c++ is a case sensitive language - tom and Tom are different
+extension - .cpp
+; - statement terminator
+
+execution manually ->
+g++ filename.cpp -o filename 
+or
+g++ -o filename filename.cpp
+./filename.exe
