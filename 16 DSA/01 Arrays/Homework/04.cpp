@@ -1,0 +1,1 @@
+// Write a function to print intersection of 2 arrays 
