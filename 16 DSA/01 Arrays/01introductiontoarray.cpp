@@ -102,7 +102,7 @@
 // 0 based index:
 // to take an address of element
 // address index = arr + index * size of data type
-// = 500 + 2 * 400
+// = 500 + 2 * 4
 // = 508
 
 // if 1 based index:
