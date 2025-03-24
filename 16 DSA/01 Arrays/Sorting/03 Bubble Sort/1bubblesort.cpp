@@ -79,3 +79,34 @@
 // so it is 1
 // O(1)
 
+#include <iostream>
+using namespace std;
+
+void bubbleSort(int arr[], int n){
+    for(int i=0; i<n-1; i++){
+        for(int j=0; j<n; j++){
+            if(arr[j] > arr[j+1]){
+                swap(arr[j], arr[j+1]);
+            }
+        }
+    }
+}
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    int arr[1000];
+    cout<<"Enter "<<n<<" numbers: "<<endl;
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    cout<<"Selection Sort: "<<endl;
+    bubbleSort(arr, n);
+
+    for(int i=0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
+}
